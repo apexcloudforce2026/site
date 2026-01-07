@@ -3,28 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDF Viewer</title>
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden;
-        }
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-    </style>
+    <title>ApexCloudForce | 360 Salesforce & AI</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <iframe 
-        src="https://1drv.ms/b/c/b3ce1b6ba0d07e2c/IQDi1tVQ-iV-S71ncM8RmyOBAVAGiFwX6x6p7vQbeX2naWc?e=1UOc4B"
-        allow="autoplay">
-    </iframe>
+<header>
+    <div class="logo" id="brand-name">ApexCloudForce</div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#expertise">Expertise</a></li>
+            <li><a href="#solutions">360 Solutions</a></li>
+            <li><a href="#success">Success Stories</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
+<section id="home" class="hero">
+    <h1 id="brand-title">ApexCloudForce</h1>
+    <h2 id="tagline">360 Salesforce and AI Services Provider</h2>
+</section>
+
+<section id="expertise">
+    <h1>Expertise</h1>
+    <div id="expertise-list"></div>
+</section>
+
+<section id="solutions" style="background: var(--light-bg);">
+    <h1>360 Solutions & Services</h1>
+    <div class="card-grid" id="solutions-grid"></div>
+</section>
+
+<section id="success">
+    <h1>Success Stories</h1>
+    <div class="card-grid" id="success-grid"></div>
+</section>
+
+<section id="contact" class="contact-section">
+    <h1>Contact Us</h1>
+    <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="text" placeholder="Company" required>
+        <input type="number" placeholder="Number of Employees">
+        <select multiple>
+            <option>Sales Cloud</option>
+            <option>Service Cloud</option>
+            <option>Data Cloud</option>
+            <option>AI Solutions</option>
+        </select>
+        <textarea placeholder="Project Description" rows="4"></textarea>
+        <input type="text" placeholder="Expected Budget / Rate">
+        <button type="submit">Send Inquiry</button>
+    </form>
+</section>
+
+<script src="script.js"></script>
 </body>
-
 </html>
